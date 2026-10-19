@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Albert Maynegra — Consultoria i formació organitzativa i comercial</title>
+<meta name="description" content="Consultor i formador per a pimes i projectes d'emprenedoria: més vendes, més eficiència i més retenció de talent.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F6F8F7;
+    --paper-deep: #EBF2F1;
+    --ink: #25214D;
+    --ink-soft: #5B577C;
+    --teal: #07879A;
+    --teal-bright: #07B4B9;
+    --green: #005753;
+    --red: #E74011;
+    --red-deep: #C6390E;
+    --line: #D6E1DF;
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --measure: 62ch;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--font);
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:var(--teal);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--red); outline-offset:3px;}
+
+  .wrap{
+    max-width:920px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  h1,h2,h3{
+    font-family:var(--font);
+    font-weight:700;
+    margin:0;
+    color:var(--ink);
+    letter-spacing:-0.01em;
+  }
+
+  /* ---------- HEADER ---------- */
+  header.top{
+    padding:36px 0 0;
+  }
+  .top .wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    border-bottom:1px solid var(--line);
+    padding-bottom:20px;
+  }
+  .mark{
+    font-weight:700;
+    font-size:1.1rem;
+  }
+  .top nav a{
+    color:var(--ink-soft);
+    text-decoration:none;
+    font-size:0.95rem;
+    font-weight:500;
+    margin-left:24px;
+  }
+  .top nav a:hover{color:var(--teal);}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:88px 0 90px;
+  }
+  .hero-eyebrow{
+    font-style:italic;
+    font-weight:500;
+    font-size:1.05rem;
+    color:var(--teal);
+    margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(2.1rem, 4.6vw, 3.4rem);
+    line-height:1.16;
+    max-width:18ch;
+    font-weight:800;
+  }
+  .hero h1 em{
+    font-style:italic;
+    font-weight:800;
+    color:var(--green);
+  }
+  .hero .sub{
+    margin-top:28px;
+    max-width:52ch;
+    font-size:1.15rem;
+    color:var(--ink-soft);
+  }
+  .hero .actions{
+    margin-top:38px;
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  .btn{
+    display:inline-block;
+    font-family:var(--font);
+    font-weight:600;
+    font-size:0.98rem;
+    text-decoration:none;
+    padding:13px 26px;
+    border-radius:2px;
+  }
+  .btn-primary{
+    background:var(--red);
+    color:#FFFFFF;
+  }
+  .btn-primary:hover{background:var(--red-deep);}
+  .btn-text{
+    color:var(--ink);
+    text-decoration:underline;
+    text-decoration-color:var(--line);
+    text-underline-offset:4px;
+  }
+  .btn-text:hover{text-decoration-color:var(--teal);}
+
+  /* pillars strip under hero */
+  .pillars{
+    margin-top:64px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+  }
+  .pillar{
+    border-top:3px solid var(--teal-bright);
+    padding-top:14px;
+    font-weight:700;
+    font-size:1.2rem;
+    line-height:1.3;
+    color:var(--green);
+  }
+  @media (max-width:640px){
+    .pillars{grid-template-columns:1fr; gap:18px; margin-top:48px;}
+  }
+
+  /* opening reveal — single orchestrated moment */
+  .reveal{
+    opacity:0;
+    transform:translateY(10px);
+    animation:riseIn 0.7s cubic-bezier(.2,.7,.3,1) forwards;
+  }
+  .reveal.d1{animation-delay:0.05s;}
+  .reveal.d2{animation-delay:0.2s;}
+  .reveal.d3{animation-delay:0.35s;}
+  @keyframes riseIn{
+    to{opacity:1; transform:translateY(0);}
+  }
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section{
+    padding:64px 0;
+    border-top:1px solid var(--line);
+  }
+  .kicker{
+    font-size:0.9rem;
+    color:var(--teal);
+    font-weight:700;
+    margin-bottom:10px;
+  }
+  section h2{
+    font-size:clamp(1.6rem, 3vw, 2.1rem);
+    max-width:22ch;
+  }
+  .lede{
+    max-width:var(--measure);
+    color:var(--ink-soft);
+    font-size:1.08rem;
+    margin-top:18px;
+  }
+
+  /* ---------- QUI SOC ---------- */
+  .who-grid{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap:48px;
+    margin-top:36px;
+    align-items:start;
+  }
+  .who-role{
+    font-weight:700;
+    font-size:1.35rem;
+    color:var(--green);
+    line-height:1.35;
+  }
+  .who-text p{
+    max-width:var(--measure);
+    margin:0 0 16px;
+  }
+  @media (max-width:720px){
+    .who-grid{grid-template-columns:1fr; gap:18px;}
+  }
+
+  /* ---------- AREES ---------- */
+  .areas-list{
+    margin-top:32px;
+    border-top:1px solid var(--line);
+  }
+  .areas-list li{
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:24px;
+    padding:20px 0;
+    border-bottom:1px solid var(--line);
+    font-size:1.08rem;
+  }
+  .areas-list .num{
+    font-style:italic;
+    font-weight:600;
+    color:var(--teal);
+    font-size:1rem;
+    flex-shrink:0;
+    width:2.4em;
+  }
+  .areas-list .label{flex:1;}
+  .no-model{
+    margin-top:28px;
+    font-style:italic;
+    font-weight:500;
+    font-size:1.15rem;
+    color:var(--green);
+  }
+
+  /* ---------- COM HO FAIG ---------- */
+  .moments{
+    margin-top:44px;
+    display:flex;
+    flex-direction:column;
+    gap:44px;
+  }
+  .moment{
+    display:grid;
+    grid-template-columns: 160px 1fr;
+    gap:28px;
+  }
+  .moment-word{
+    font-style:italic;
+    font-weight:600;
+    font-size:1.25rem;
+    color:var(--teal);
+    padding-top:2px;
+  }
+  .moment h3{
+    font-size:1.25rem;
+    font-weight:700;
+    margin-bottom:10px;
+  }
+  .moment p{
+    max-width:var(--measure);
+    color:var(--ink-soft);
+    margin:0;
+  }
+  @media (max-width:640px){
+    .moment{grid-template-columns:1fr; gap:8px;}
+  }
+
+  /* ---------- RESULTATS ---------- */
+  .promise-lead{
+    font-weight:800;
+    font-size:clamp(1.6rem, 3.4vw, 2.2rem);
+    line-height:1.2;
+    max-width:22ch;
+    margin:0;
+    color:var(--ink);
+  }
+  .promise{
+    font-weight:500;
+    font-size:1.2rem;
+    line-height:1.5;
+    max-width:44ch;
+    margin-top:22px;
+    color:var(--green);
+  }
+  .results-grid{
+    margin-top:48px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    border-top:1px solid var(--line);
+    border-left:1px solid var(--line);
+  }
+  .result{
+    padding:32px 32px 32px 0;
+    margin-left:32px;
+    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .result h3{
+    font-size:1.15rem;
+    font-weight:700;
+    margin-bottom:8px;
+  }
+  .result p{
+    margin:0;
+    color:var(--ink-soft);
+    font-size:0.98rem;
+  }
+  .result.lead{grid-column:1 / -1;}
+  .result.lead h3{font-size:1.3rem;}
+  .result.lead p{font-size:1.05rem; max-width:56ch;}
+  @media (max-width:640px){
+    .results-grid{grid-template-columns:1fr;}
+  }
+
+  /* ---------- CONTACTE ---------- */
+  .contact{
+    background:var(--paper-deep);
+  }
+  .contact h2{max-width:none;}
+  .contact-row{
+    margin-top:32px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    flex-wrap:wrap;
+    gap:28px;
+  }
+  .contact-links{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    font-size:1.05rem;
+    font-weight:500;
+  }
+  .contact-links a{
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1px solid var(--line);
+  }
+  .contact-links a:hover{border-color:var(--teal); color:var(--teal);}
+
+  footer{
+    padding:32px 0 48px;
+    color:var(--ink-soft);
+    font-size:0.88rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="mark">Albert Maynegra</div>
+    <nav>
+      <a href="#que-ofereixo">Què ofereixo</a>
+      <a href="#contacte">Contacte</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="border-top:none;">
+  <div class="wrap">
+    <p class="hero-eyebrow reveal d1">Consultoria i formació per a pimes i projectes d'emprenedoria</p>
+    <h1 class="reveal d2">Quan alguna cosa no funciona i no saps ben bé <em>on</em>, hi posem llum plegats.</h1>
+    <p class="sub reveal d3">Diagnosi real, millores concretes, formació específica i un equip que treballa amb més autonomia i confiança. Això no va de consultoria asèptica: va d'arremangar-se.</p>
+    <div class="actions reveal d3">
+      <a class="btn btn-primary" href="#contacte">Parlem-ne</a>
+      <a class="btn btn-text" href="#que-ofereixo">Què ofereixo →</a>
+    </div>
+    <div class="pillars reveal d3">
+      <div class="pillar">Més vendes</div>
+      <div class="pillar">Més eficiència</div>
+      <div class="pillar">Més retenció de talent</div>
+    </div>
+  </div>
+</section>
+
+<section id="qui-soc">
+  <div class="wrap">
+    <p class="kicker">Qui soc</p>
+    <div class="who-grid">
+      <p class="who-role">Consultor i formador centrat en l'organització i en el client, especialment en la part comercial.</p>
+      <div class="who-text">
+        <p>Fan absolut de la millora contínua. Titulat en Enginyeria Industrial, amb àmplia experiència comercial i docent.</p>
+        <p>Tinc la capacitat de veure on falla un sistema i trobar la manera que l'equip ho entengui i ho pugui aplicar. Els que treballen amb mi aprecien les meves aportacions com a palanques que serveixen per créixer i aportar més valor a la clientela. Preguntes adeqüades, escolta, formació recurrent i aprenentatge constant en contextos molt diversos.</p>
+        <p>Més de nou anys construint i millorant processos de venda des de dins m'han ensenyat a posar les necessitats del client per davant del producte — i a acompanyar equips a connectar de veritat amb les persones a qui s'adrecen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="que-ofereixo">
+  <div class="wrap">
+    <p class="kicker">Què ofereixo</p>
+    <h2>Una diagnosi honesta i un pla adaptat al ritme de l'empresa.</h2>
+    <p class="lede">Ajudo petites i mitjanes empreses i projectes d'emprenedoria a posar sobre la taula el que el dia a dia no els deixa veure o no poden atendre. A partir d'una diagnosi real, elaboro un pla de millores concret i seqüenciat i les formacions necessàries, adaptades al ritme de l'empresa. Les àrees on treballo habitualment:</p>
+    <ul class="areas-list">
+      <li><span class="num">I.</span><span class="label">Processos comercials i metodologia de vendes</span></li>
+      <li><span class="num">II.</span><span class="label">Estructura organitzativa i comunicació interna</span></li>
+      <li><span class="num">III.</span><span class="label">Cultura d'equip, autogestió i clarificació de rols</span></li>
+      <li><span class="num">IV.</span><span class="label">Pla de millores prioritzat segons matriu ASD (Ara, Seguidament, Després)</span></li>
+      <li><span class="num">V.</span><span class="label">Formacions específiques</span></li>
+    </ul>
+    <p class="no-model">No es tracta d'imposar models: això va d'acompanyar processos.</p>
+  </div>
+</section>
+
+<section id="resultats">
+  <div class="wrap">
+    <p class="kicker">Quins resultats pots esperar</p>
+    <p class="promise-lead">Això no va de consultoria asèptica. Va d'arremangar-se.</p>
+    <p class="promise">L'objectiu és que sis mesos després de començar, la gerència pugui dir tres coses: que l'empresa va millor, que l'equip treballa amb més harmonia i es comunica millor, i que les vendes han millorat.</p>
+    <div class="results-grid">
+      <div class="result lead">
+        <h3>Vendes amb més sentit</h3>
+        <p>Un equip comercial que entén per què fa el que fa, ven millor. No per pressió, sinó per convicció.</p>
+      </div>
+      <div class="result">
+        <h3>Claredat</h3>
+        <p>Tothom sap qui fa què, qui decideix què i per quins canals. S'acaba el desgast invisible de les responsabilitats mal definides.</p>
+      </div>
+      <div class="result">
+        <h3>Comunicació real</h3>
+        <p>Les converses difícils es tenen, no s'eviten. L'equip parla clar i la direcció escolta. Els problemes es resolen abans que s'acumulin.</p>
+      </div>
+      <div class="result">
+        <h3>Més aptituds de l'equip</h3>
+        <p>L'equip de treball creix, sap fer més coses. Sap resoldre amb solvència més problemes.</p>
+      </div>
+      <div class="result">
+        <h3>Autonomia i confiança</h3>
+        <p>Les persones actuen sense demanar permís constant. La direcció pot pensar en estratègia en lloc de resoldre problemes del dia a dia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacte" class="contact">
+  <div class="wrap">
+    <p class="kicker">Contacte</p>
+    <h2>Parlem del que no acaba de rutllar a la teva empresa.</h2>
+    <div class="contact-row">
+      <p class="lede" style="margin-top:0;">Una primera conversa no compromet a res: serveix per veure si hi ha feina a fer i si encaixem.</p>
+      <div class="contact-links">
+        <a href="mailto:amaynegra@gmail.com">amaynegra@gmail.com</a>
+        <a href="tel:+34696698185">+34 696 698 185</a>
+        <a href="https://www.linkedin.com/in/amaynegra/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © 2026 Albert Maynegra Laguarda
+  </div>
+</footer>
+
+</body>
+</html>
