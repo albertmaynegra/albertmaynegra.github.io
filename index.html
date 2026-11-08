@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Albert Maynegra — Consultoria i formació organitzativa i comercial</title>
 <meta name="description" content="Consultor i formador per a pimes i projectes d'emprenedoria: més vendes, més eficiència i més retenció de talent.">
+<link rel="alternate" hreflang="ca" href="index.html">
+<link rel="alternate" hreflang="es" href="es.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
@@ -360,6 +362,16 @@
     color:var(--ink-soft);
     font-size:0.88rem;
   }
+
+  .lang{margin-left:28px; font-size:0.9rem; font-weight:600; color:var(--ink-soft); white-space:nowrap;}
+  .lang a{margin-left:0; color:var(--ink-soft);}
+  .lang [aria-current]{color:var(--ink); border-bottom:2px solid var(--teal-bright);}
+  .lang span.sep{margin:0 6px; color:var(--line);}
+  @media (max-width:560px){
+    .top .wrap{flex-wrap:wrap; gap:12px;}
+    .top nav a{margin-left:0; margin-right:18px;}
+    .lang{margin-left:0;}
+  }
 </style>
 </head>
 <body>
@@ -370,6 +382,7 @@
     <nav>
       <a href="#que-ofereixo">Què ofereixo</a>
       <a href="#contacte">Contacte</a>
+      <span class="lang"><a aria-current="page">CA</a><span class="sep">|</span><a href="es.html" hreflang="es" lang="es">ES</a></span>
     </nav>
   </div>
 </header>
