@@ -4,16 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Albert Maynegra — Consultoria i formació organitzativa i comercial</title>
-<meta name="description" content="Consultor i formador per a pimes i projectes d'emprenedoria: més vendes, més eficiència i més retenció de talent.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://albertmaynegra.github.io/">
-<meta property="og:title" content="Albert Maynegra — Consultoria i formació organitzativa i comercial">
-<meta property="og:description" content="Consultor i formador per a pimes i projectes d'emprenedoria: més vendes, més eficiència i més retenció de talent.">
-<meta property="og:image" content="https://albertmaynegra.github.io/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="627">
-<meta property="og:locale" content="ca_ES">
-<meta property="og:locale:alternate" content="es_ES">
+<meta name="description" content="Consultor i formador per a pimes i projectes d'emprenedoria: vendes, organització i persones. Des d'un projecte integral fins a una sessió puntual.">
 <link rel="alternate" hreflang="ca" href="index.html">
 <link rel="alternate" hreflang="es" href="es.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -381,6 +372,41 @@
     .top nav a{margin-left:0; margin-right:18px;}
     .lang{margin-left:0;}
   }
+
+  /* reptes */
+  .challenges{
+    margin:32px 0 0; padding:0;
+    list-style:none;
+    display:grid; grid-template-columns:1fr 1fr; gap:0 48px;
+  }
+  .challenges li{
+    padding:18px 0 18px 18px;
+    border-bottom:1px solid var(--line);
+    border-left:3px solid var(--teal-bright);
+    margin-bottom:-1px;
+    font-size:1.05rem;
+  }
+  .challenges-close{
+    margin-top:28px; font-style:italic; font-weight:500; font-size:1.15rem; color:var(--green);
+  }
+  @media (max-width:720px){ .challenges{grid-template-columns:1fr;} }
+
+  /* tres dimensions */
+  .dims{
+    margin-top:40px;
+    display:grid; grid-template-columns:repeat(3,1fr); gap:32px;
+  }
+  .dim{ border-top:3px solid var(--teal); padding-top:16px; }
+  .dim h3{ font-size:1.2rem; font-weight:700; color:var(--green); margin-bottom:12px; }
+  .dim ul{ margin:0; padding:0; list-style:none; }
+  .dim li{
+    padding:9px 0; border-bottom:1px solid var(--line);
+    font-size:0.98rem; color:var(--ink-soft);
+  }
+  @media (max-width:820px){ .dims{grid-template-columns:1fr; gap:36px;} }
+  .method{
+    margin-top:44px; max-width:var(--measure); color:var(--ink-soft);
+  }
 </style>
 </head>
 <body>
@@ -389,7 +415,9 @@
   <div class="wrap">
     <div class="mark">Albert Maynegra</div>
     <nav>
+      <a href="#reptes">Els reptes</a>
       <a href="#que-ofereixo">Què ofereixo</a>
+      <a href="#qui-soc">Qui soc</a>
       <a href="#contacte">Contacte</a>
       <span class="lang"><a aria-current="page">CA</a><span class="sep">|</span><a href="es.html" hreflang="es" lang="es">ES</a></span>
     </nav>
@@ -400,9 +428,9 @@
   <div class="wrap">
     <p class="hero-eyebrow reveal d1">Consultoria i formació per a pimes i projectes d'emprenedoria</p>
     <h1 class="reveal d2">Quan alguna cosa no funciona i no saps ben bé <em>on</em>, hi posem llum plegats.</h1>
-    <p class="sub reveal d3">Diagnosi real, millores concretes, formació específica i un equip que treballa amb més autonomia i confiança. Això no va de consultoria asèptica: va d'arremangar-se.</p>
+    <p class="sub reveal d3">No vinc a dir-te què has de fer. Vinc a treballar amb tu perquè les coses funcionin millor: en vendes, en organització i en persones. Des d'un projecte integral fins a una sessió puntual.</p>
     <div class="actions reveal d3">
-      <a class="btn btn-primary" href="#contacte">Parlem-ne</a>
+      <a class="btn btn-primary" href="#contacte">Parlem del teu projecte</a>
       <a class="btn btn-text" href="#que-ofereixo">Què ofereixo →</a>
     </div>
     <div class="pillars reveal d3">
@@ -413,32 +441,57 @@
   </div>
 </section>
 
-<section id="qui-soc">
+<section id="reptes">
   <div class="wrap">
-    <p class="kicker">Qui soc</p>
-    <div class="who-grid">
-      <p class="who-role">Consultor i formador centrat en l'organització i en el client, especialment en la part comercial.</p>
-      <div class="who-text">
-        <p>Fan absolut de la millora contínua. Titulat en Enginyeria Industrial, amb àmplia experiència comercial i docent. La proposta que faig porta a veure on falla un sistema i trobar la manera que l'equip ho entengui i ho pugui aplicar.</p>
-        <p>Els que treballen amb mi aprecien les meves aportacions com a palanques que serveixen per créixer i aportar més valor a la clientela. Preguntes adequades, escolta, formació recurrent i aprenentatge constant en contextos molt diversos.</p>
-        <p>Més de nou anys construint i millorant processos de venda des de dins m'han ensenyat a posar les necessitats del client per davant del producte — i a acompanyar equips a connectar de veritat amb les persones a qui s'adrecen.</p>
-      </div>
-    </div>
+    <p class="kicker">Els reptes</p>
+    <h2>Potser et sona.</h2>
+    <ul class="challenges">
+      <li>Les vendes no evolucionen com voldries.</li>
+      <li>L'organització no ha crescut al ritme del negoci.</li>
+      <li>Massa coses depenen de determinades persones.</li>
+      <li>Els equips no acaben de treballar ben coordinats.</li>
+      <li>Els processos són poc eficients.</li>
+      <li>Saps què caldria millorar, però falta temps o metodologia per fer-ho.</li>
+    </ul>
+    <p class="challenges-close">Si te'n reconeixes en algun, ja tenim per on començar.</p>
   </div>
 </section>
 
 <section id="que-ofereixo">
   <div class="wrap">
     <p class="kicker">Què ofereixo</p>
-    <h2>Una diagnosi honesta i un pla adaptat al ritme de l'empresa.</h2>
-    <p class="lede">Ajudo petites i mitjanes empreses i projectes d'emprenedoria a posar sobre la taula el que el dia a dia no els deixa veure o no poden atendre. A partir d'una diagnosi real, elaboro un pla de millores concret i seqüenciat i les formacions necessàries, adaptades al ritme de l'empresa. Les àrees on treballo habitualment:</p>
-    <ul class="areas-list">
-      <li><span class="num">I.</span><span class="label">Processos comercials i metodologia de vendes</span></li>
-      <li><span class="num">II.</span><span class="label">Estructura organitzativa i comunicació interna</span></li>
-      <li><span class="num">III.</span><span class="label">Cultura d'equip, autogestió i clarificació de rols</span></li>
-      <li><span class="num">IV.</span><span class="label">Pla de millores prioritzat segons matriu ASD (Ara, Seguidament, Després)</span></li>
-      <li><span class="num">V.</span><span class="label">Formacions específiques</span></li>
-    </ul>
+    <h2>Tres dimensions d'una mateixa empresa.</h2>
+    <p class="lede">Poden ser un projecte integral que les connecti, o una actuació concreta en una sola: una formació, una sessió comercial, un taller. Comencem per allà on més ho necessites.</p>
+    <div class="dims">
+      <div class="dim">
+        <h3>Vendes i estratègia comercial</h3>
+        <ul>
+          <li>Processos i metodologia de venda</li>
+          <li>Organització comercial</li>
+          <li>Seguiment i fidelització de clients</li>
+          <li>Atenció al client i experiència de compra</li>
+        </ul>
+      </div>
+      <div class="dim">
+        <h3>Organització i processos</h3>
+        <ul>
+          <li>Estructures i responsabilitats</li>
+          <li>Definició i millora de processos</li>
+          <li>Comunicació i coordinació interna</li>
+          <li>Sistemes de treball i presa de decisions</li>
+        </ul>
+      </div>
+      <div class="dim">
+        <h3>Persones i equips</h3>
+        <ul>
+          <li>Cultura i cohesió d'equip</li>
+          <li>Clarificació de rols</li>
+          <li>Autonomia i autogestió</li>
+          <li>Comunicació, lideratge i desenvolupament de capacitats</li>
+        </ul>
+      </div>
+    </div>
+    <p class="method">Quan l'encàrrec ho demana, partim d'una diagnosi real i prioritzem les millores amb la matriu ASD (Ara, Seguidament, Després). Les formacions específiques serveixen per facilitar-ne la implantació i fer créixer les capacitats de l'equip.</p>
     <p class="no-model">No es tracta d'imposar models: més aviat d'acompanyar processos, crear conjuntament i validar resultats.</p>
   </div>
 </section>
@@ -473,12 +526,26 @@
   </div>
 </section>
 
+<section id="qui-soc">
+  <div class="wrap">
+    <p class="kicker">Qui soc</p>
+    <div class="who-grid">
+      <p class="who-role">Consultor i formador centrat en l'organització i en el client, especialment en la part comercial.</p>
+      <div class="who-text">
+        <p>Fan absolut de la millora contínua. Titulat en Enginyeria Industrial, amb àmplia experiència comercial i docent. La proposta que faig porta a veure on falla un sistema i trobar la manera que l'equip ho entengui i ho pugui aplicar.</p>
+        <p>Els que treballen amb mi aprecien les meves aportacions com a palanques que serveixen per créixer i aportar més valor a la clientela. Preguntes adequades, escolta, formació recurrent i aprenentatge constant en contextos molt diversos.</p>
+        <p>Més de nou anys construint i millorant processos de venda des de dins m'han ensenyat a posar les necessitats del client per davant del producte — i a acompanyar equips a connectar de veritat amb les persones a qui s'adrecen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="contacte" class="contact">
   <div class="wrap">
     <p class="kicker">Contacte</p>
-    <h2>Parlem del que no acaba de rutllar a la teva empresa.</h2>
+    <h2>I si comencem parlant del que pot millorar la teva empresa?</h2>
     <div class="contact-row">
-      <p class="lede" style="margin-top:0;">Una primera conversa no compromet a res: serveix per veure si hi ha feina a fer i si encaixem.</p>
+      <p class="lede" style="margin-top:0;">Una primera conversa no compromet a res. No cal que sàpigues quin servei necessites: ho veiem plegats.</p>
       <div class="contact-links">
         <a href="mailto:amaynegra@gmail.com">amaynegra@gmail.com</a>
         <a href="tel:+34696698185">+34 696 698 185</a>
