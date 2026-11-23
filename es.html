@@ -4,16 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Albert Maynegra — Consultoría y formación organizativa y comercial</title>
-<meta name="description" content="Consultor y formador para pymes y proyectos de emprendimiento: más ventas, más eficiencia y más retención de talento.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://albertmaynegra.github.io/">
-<meta property="og:title" content="Albert Maynegra — Consultoria i formació organitzativa i comercial">
-<meta property="og:description" content="Consultor i formador per a pimes i projectes d'emprenedoria: més vendes, més eficiència i més retenció de talent.">
-<meta property="og:image" content="https://albertmaynegra.github.io/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="627">
-<meta property="og:locale" content="ca_ES">
-<meta property="og:locale:alternate" content="es_ES">
+<meta name="description" content="Consultor y formador para pymes y proyectos de emprendimiento: ventas, organización y personas. Desde un proyecto integral hasta una sesión puntual.">
 <link rel="alternate" hreflang="ca" href="index.html">
 <link rel="alternate" hreflang="es" href="es.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -381,6 +372,41 @@
     .top nav a{margin-left:0; margin-right:18px;}
     .lang{margin-left:0;}
   }
+
+  /* reptes */
+  .challenges{
+    margin:32px 0 0; padding:0;
+    list-style:none;
+    display:grid; grid-template-columns:1fr 1fr; gap:0 48px;
+  }
+  .challenges li{
+    padding:18px 0 18px 18px;
+    border-bottom:1px solid var(--line);
+    border-left:3px solid var(--teal-bright);
+    margin-bottom:-1px;
+    font-size:1.05rem;
+  }
+  .challenges-close{
+    margin-top:28px; font-style:italic; font-weight:500; font-size:1.15rem; color:var(--green);
+  }
+  @media (max-width:720px){ .challenges{grid-template-columns:1fr;} }
+
+  /* tres dimensions */
+  .dims{
+    margin-top:40px;
+    display:grid; grid-template-columns:repeat(3,1fr); gap:32px;
+  }
+  .dim{ border-top:3px solid var(--teal); padding-top:16px; }
+  .dim h3{ font-size:1.2rem; font-weight:700; color:var(--green); margin-bottom:12px; }
+  .dim ul{ margin:0; padding:0; list-style:none; }
+  .dim li{
+    padding:9px 0; border-bottom:1px solid var(--line);
+    font-size:0.98rem; color:var(--ink-soft);
+  }
+  @media (max-width:820px){ .dims{grid-template-columns:1fr; gap:36px;} }
+  .method{
+    margin-top:44px; max-width:var(--measure); color:var(--ink-soft);
+  }
 </style>
 </head>
 <body>
@@ -389,7 +415,9 @@
   <div class="wrap">
     <div class="mark">Albert Maynegra</div>
     <nav>
+      <a href="#retos">Los retos</a>
       <a href="#que-ofrezco">Qué ofrezco</a>
+      <a href="#quien-soy">Quién soy</a>
       <a href="#contacto">Contacto</a>
       <span class="lang"><a href="index.html" hreflang="ca" lang="ca">CA</a><span class="sep">|</span><a aria-current="page">ES</a></span>
     </nav>
@@ -400,9 +428,9 @@
   <div class="wrap">
     <p class="hero-eyebrow reveal d1">Consultoría y formación para pymes y proyectos de emprendimiento</p>
     <h1 class="reveal d2">Cuando algo no funciona y no sabes bien <em>dónde</em>, ponemos luz juntos.</h1>
-    <p class="sub reveal d3">Diagnóstico real, mejoras concretas, formación específica y un equipo que trabaja con más autonomía y confianza. Esto no va de consultoría aséptica: va de remangarse.</p>
+    <p class="sub reveal d3">No vengo a decirte lo que tienes que hacer. Vengo a trabajar contigo para que las cosas funcionen mejor: en ventas, en organización y en personas. Desde un proyecto integral hasta una sesión puntual.</p>
     <div class="actions reveal d3">
-      <a class="btn btn-primary" href="#contacto">Hablemos</a>
+      <a class="btn btn-primary" href="#contacto">Hablemos de tu proyecto</a>
       <a class="btn btn-text" href="#que-ofrezco">Qué ofrezco →</a>
     </div>
     <div class="pillars reveal d3">
@@ -413,32 +441,57 @@
   </div>
 </section>
 
-<section id="quien-soy">
+<section id="retos">
   <div class="wrap">
-    <p class="kicker">Quién soy</p>
-    <div class="who-grid">
-      <p class="who-role">Consultor y formador centrado en la organización y en el cliente, especialmente en la parte comercial.</p>
-      <div class="who-text">
-        <p>Fan absoluto de la mejora continua. Titulado en Ingeniería Industrial, con amplia experiencia comercial y docente. La propuesta que hago lleva a ver dónde falla un sistema y a encontrar la manera de que el equipo lo entienda y pueda aplicarlo.</p>
-        <p>Quienes trabajan conmigo aprecian mis aportaciones como palancas que sirven para crecer y aportar más valor a la clientela. Preguntas adecuadas, escucha, formación recurrente y aprendizaje constante en contextos muy diversos.</p>
-        <p>Más de nueve años construyendo y mejorando procesos de venta desde dentro me han enseñado a poner las necesidades del cliente por delante del producto — y a acompañar a los equipos para que conecten de verdad con las personas a quienes se dirigen.</p>
-      </div>
-    </div>
+    <p class="kicker">Los retos</p>
+    <h2>Quizá te suene.</h2>
+    <ul class="challenges">
+      <li>Las ventas no evolucionan como te gustaría.</li>
+      <li>La organización no ha crecido al ritmo del negocio.</li>
+      <li>Demasiadas cosas dependen de determinadas personas.</li>
+      <li>Los equipos no acaban de trabajar bien coordinados.</li>
+      <li>Los procesos son poco eficientes.</li>
+      <li>Sabes qué habría que mejorar, pero falta tiempo o metodología para hacerlo.</li>
+    </ul>
+    <p class="challenges-close">Si te reconoces en alguno, ya tenemos por dónde empezar.</p>
   </div>
 </section>
 
 <section id="que-ofrezco">
   <div class="wrap">
     <p class="kicker">Qué ofrezco</p>
-    <h2>Un diagnóstico honesto y un plan adaptado al ritmo de la empresa.</h2>
-    <p class="lede">Ayudo a pequeñas y medianas empresas y proyectos de emprendimiento a poner sobre la mesa lo que el día a día no les deja ver o no pueden atender. A partir de un diagnóstico real, elaboro un plan de mejoras concreto y secuenciado y las formaciones necesarias, adaptadas al ritmo de la empresa. Las áreas en las que trabajo habitualmente:</p>
-    <ul class="areas-list">
-      <li><span class="num">I.</span><span class="label">Procesos comerciales y metodología de ventas</span></li>
-      <li><span class="num">II.</span><span class="label">Estructura organizativa y comunicación interna</span></li>
-      <li><span class="num">III.</span><span class="label">Cultura de equipo, autogestión y clarificación de roles</span></li>
-      <li><span class="num">IV.</span><span class="label">Plan de mejoras priorizado según matriz ASD (Ahora, Siguiente, Después)</span></li>
-      <li><span class="num">V.</span><span class="label">Formaciones específicas</span></li>
-    </ul>
+    <h2>Tres dimensiones de una misma empresa.</h2>
+    <p class="lede">Pueden ser un proyecto integral que las conecte, o una actuación concreta en una sola: una formación, una sesión comercial, un taller. Empezamos por donde más lo necesites.</p>
+    <div class="dims">
+      <div class="dim">
+        <h3>Ventas y estrategia comercial</h3>
+        <ul>
+          <li>Procesos y metodología de venta</li>
+          <li>Organización comercial</li>
+          <li>Seguimiento y fidelización de clientes</li>
+          <li>Atención al cliente y experiencia de compra</li>
+        </ul>
+      </div>
+      <div class="dim">
+        <h3>Organización y procesos</h3>
+        <ul>
+          <li>Estructuras y responsabilidades</li>
+          <li>Definición y mejora de procesos</li>
+          <li>Comunicación y coordinación interna</li>
+          <li>Sistemas de trabajo y toma de decisiones</li>
+        </ul>
+      </div>
+      <div class="dim">
+        <h3>Personas y equipos</h3>
+        <ul>
+          <li>Cultura y cohesión de equipo</li>
+          <li>Clarificación de roles</li>
+          <li>Autonomía y autogestión</li>
+          <li>Comunicación, liderazgo y desarrollo de capacidades</li>
+        </ul>
+      </div>
+    </div>
+    <p class="method">Cuando el encargo lo pide, partimos de un diagnóstico real y priorizamos las mejoras con la matriz ASD (Ahora, Siguiente, Después). Las formaciones específicas sirven para facilitar su implantación y hacer crecer las capacidades del equipo.</p>
     <p class="no-model">No se trata de imponer modelos: más bien de acompañar procesos, crear conjuntamente y validar resultados.</p>
   </div>
 </section>
@@ -473,12 +526,26 @@
   </div>
 </section>
 
+<section id="quien-soy">
+  <div class="wrap">
+    <p class="kicker">Quién soy</p>
+    <div class="who-grid">
+      <p class="who-role">Consultor y formador centrado en la organización y en el cliente, especialmente en la parte comercial.</p>
+      <div class="who-text">
+        <p>Fan absoluto de la mejora continua. Titulado en Ingeniería Industrial, con amplia experiencia comercial y docente. La propuesta que hago lleva a ver dónde falla un sistema y a encontrar la manera de que el equipo lo entienda y pueda aplicarlo.</p>
+        <p>Quienes trabajan conmigo aprecian mis aportaciones como palancas que sirven para crecer y aportar más valor a la clientela. Preguntas adecuadas, escucha, formación recurrente y aprendizaje constante en contextos muy diversos.</p>
+        <p>Más de nueve años construyendo y mejorando procesos de venta desde dentro me han enseñado a poner las necesidades del cliente por delante del producto — y a acompañar a los equipos para que conecten de verdad con las personas a quienes se dirigen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="contacto" class="contact">
   <div class="wrap">
     <p class="kicker">Contacto</p>
-    <h2>Hablemos de lo que no acaba de funcionar en tu empresa.</h2>
+    <h2>¿Y si empezamos hablando de lo que puede mejorar tu empresa?</h2>
     <div class="contact-row">
-      <p class="lede" style="margin-top:0;">Una primera conversación no compromete a nada: sirve para ver si hay trabajo que hacer y si encajamos.</p>
+      <p class="lede" style="margin-top:0;">Una primera conversación no compromete a nada. No hace falta que sepas qué servicio necesitas: lo vemos juntos.</p>
       <div class="contact-links">
         <a href="mailto:amaynegra@gmail.com">amaynegra@gmail.com</a>
         <a href="tel:+34696698185">+34 696 698 185</a>
